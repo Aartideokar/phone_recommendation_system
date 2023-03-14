@@ -25,8 +25,6 @@ def recommand(product) :
     for i in distance[1:10] :
         print(i[1])
 
-#recommand('Ulefone Note 10 32Go+2Go Octa-Core, 6,52Pouce, 8MP AI Triple Caméra, Fingerprint')
-
 pickle.dump(phones,open('phone_list.pkl','wb'))
 pickle.dump(cosinesim,open('similarity_phone.pkl','wb'))
 
