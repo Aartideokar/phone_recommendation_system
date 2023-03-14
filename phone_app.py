@@ -3,6 +3,15 @@ import streamlit as st
 import pandas as pd
 
 from PIL import Image
+st.markdown(
+   f”””
+   <style>
+   p {
+   background-image: url(‘phone.jpg’);
+   }
+   </style>
+   ”””,
+   unsafe_allow_html=True)
 width = st.slider('What is the width in pixels?', 400, 700, 700)
 
 image = Image.open('photo.png')
