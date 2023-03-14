@@ -7,8 +7,10 @@ from PIL import Image
 width = st.slider('What is the width in pixels?', 400, 700, 700)
 
 image = Image.open('photo.png')
+new_image = image.resize((600, 400))
+    st.image(new_image)
+# st.image(image, caption='Smart Phones',width=width)
 
-st.image(image, caption='Smart Phones',width=width)
 
 
 def recommendTV(product,n):
