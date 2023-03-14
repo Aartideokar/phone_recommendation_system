@@ -7,7 +7,7 @@ from PIL import Image
 # width = st.slider('What is the width in pixels?', 400, 700, 700)
 
 image = Image.open('photo.png')
-new_image = image.resize((400,700))
+new_image = image.resize((700,400))
 st.image(new_image)
 # st.image(image, caption='Smart Phones',width=width)
 
