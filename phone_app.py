@@ -4,7 +4,7 @@ import pandas as pd
 
 from PIL import Image
 
-image = Image.open('phone.jpg')
+image = Image.open('phone.jpg', width=1000, height=1500)
 
 st.image(image, caption='Smart Phones')
 
