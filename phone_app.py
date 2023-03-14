@@ -5,7 +5,7 @@ import pandas as pd
 from PIL import Image
 width = st.slider('What is the width in pixels?', 0, 700, 350)
 
-image = Image.open('phone.jpg')
+image = Image.open('phones.jpg')
 
 st.image(image, caption='Smart Phones',width=width)
 
