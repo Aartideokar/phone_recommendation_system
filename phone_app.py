@@ -2,6 +2,12 @@ import pickle
 import streamlit as st
 import pandas as pd
 
+from PIL import Image
+
+image = Image.open('phone.jpg')
+
+st.image(image, caption='Smart Phones')
+
 
 def recommendTV(product,n):
     index = phones[phones['caracteristique'] == product].index[0]
