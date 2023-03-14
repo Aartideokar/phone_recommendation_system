@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 
 from PIL import Image
-width = st.slider('What is the width in pixels?', 0, 700, 350)
+width = st.slider('What is the width in pixels?', 0, 800, 700)
 
 image = Image.open('phones.jpg')
 
